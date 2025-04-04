@@ -1,0 +1,1436 @@
+[
+    {
+        "category": "NIST CSF",
+        "question": "Data encrypted at rest and transit?",
+        "type": "compliance",
+        "weight": 10
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Access controls implemented?",
+        "type": "compliance",
+        "weight": 10
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Penetration tests performed?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Data breach response plan active?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Disaster recovery plan established?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Cybersecurity training provided?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Vendor risk assessment conducted?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Logs audited for anomalies?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Backups regularly tested?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Physical security policy in place?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Incident reporting mechanism exists?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Supply chain continuity planned?",
+        "type": "compliance",
+        "weight": 7
+    },
+    {
+        "category": "RBI",
+        "question": "RBI data localization compliant?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "RBI",
+        "question": "RBI encryption standards met?",
+        "type": "compliance",
+        "weight": 10
+    },
+    {
+        "category": "RBI",
+        "question": "RBI KYC compliance ensured?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "RBI",
+        "question": "RBI cyber incident reporting adhered?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "RBI",
+        "question": "RBI penetration testing mandated?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "RBI",
+        "question": "RBI audit trails maintained?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "RBI",
+        "question": "RBI vendor SLAs reviewed?",
+        "type": "compliance",
+        "weight": 7
+    },
+    {
+        "category": "ISO",
+        "question": "ISO 27001 certification achieved?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "ISO",
+        "question": "ISO risk assessments conducted?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "ISO",
+        "question": "ISO incident management defined?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "ISO",
+        "question": "ISO access controls reviewed?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "ISO",
+        "question": "ISO supplier relationships managed?",
+        "type": "compliance",
+        "weight": 7
+    },
+    {
+        "category": "ISO",
+        "question": "ISO compliance audits performed?",
+        "type": "compliance",
+        "weight": 7
+    },
+    {
+        "category": "Finance",
+        "question": "Regular financial audits conducted?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "Finance",
+        "question": "AML compliance ensured?",
+        "type": "compliance",
+        "weight": 7
+    },
+    {
+        "category": "Finance",
+        "question": "Fraud monitoring active?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "Finance",
+        "question": "Tax compliance ensured?",
+        "type": "compliance",
+        "weight": 7
+    },
+    {
+        "category": "API Security",
+        "question": "API endpoints encrypted?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 10,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        }
+    },
+    {
+        "category": "API Security",
+        "question": "API data validation performed?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "API Security",
+        "question": "API authentication enforced (e.g., OAuth)?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        }
+    },
+    {
+        "category": "API Security",
+        "question": "API logs monitored?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        }
+    },
+    {
+        "category": "API Security",
+        "question": "API third-party access restricted?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Redirects tested for phishing risks?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        }
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Redirect vulnerabilities scanned?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "Web Redirections",
+        "question": "HTTPS redirects enforced?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        }
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Redirect logs monitored?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        }
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Redirect configurations hardened?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "Deep Tech",
+        "question": "IoT device authentication enforced?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        }
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Blockchain smart contracts audited?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        }
+    },
+    {
+        "category": "Deep Tech",
+        "question": "IoT firmware updates tracked?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        }
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Blockchain node security hardened?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "Deep Tech",
+        "question": "AI model security validated?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        }
+    },
+    {
+        "category": "General",
+        "question": "Cyber insurance maintained?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "General",
+        "question": "Onboarding checklist followed?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "General",
+        "question": "SLA performance monitored?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "General",
+        "question": "High-risk vendors terminated?",
+        "type": "other",
+        "weight": 8
+    },
+    {
+        "category": "General",
+        "question": "Escalation matrix defined?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "General",
+        "question": "Risk playbook maintained?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "General",
+        "question": "Vendor exit strategy planned?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "General",
+        "question": "Dependencies mapped?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "General",
+        "question": "Performance dashboard maintained?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "General",
+        "question": "Risk budget allocated?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "API Security",
+        "question": "API versioning maintained?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "API Security",
+        "question": "API error handling robust?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "API Security",
+        "question": "API documentation secure and updated?",
+        "type": "other",
+        "weight": 5
+    },
+    {
+        "category": "API Security",
+        "question": "API rate limiting implemented?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "API Security",
+        "question": "API security audits conducted?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Redirects aligned with SEO?",
+        "type": "other",
+        "weight": 5
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Redirect chains minimized?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Redirects authenticated?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Redirect policies defined?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Redirects audited periodically?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "Deep Tech",
+        "question": "AI bias risks assessed?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Blockchain transaction integrity ensured?",
+        "type": "other",
+        "weight": 8
+    },
+    {
+        "category": "Deep Tech",
+        "question": "IoT network segmented?",
+        "type": "other",
+        "weight": 8
+    },
+    {
+        "category": "Deep Tech",
+        "question": "AI data privacy compliant?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Deep tech logs monitored?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "Finance",
+        "question": "Payment fraud monitored?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "Finance",
+        "question": "Contracts version-controlled?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "Finance",
+        "question": "Litigation risks monitored?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "Finance",
+        "question": "Metrics reported to leadership?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "Finance",
+        "question": "Bribery risks assessed?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "API Security",
+        "question": "Are APIs protected against initial access via exploited apps?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1190"
+    },
+    {
+        "category": "API Security",
+        "question": "Are API credentials safe from theft post-login?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        },
+        "mitre_technique": "T1555"
+    },
+    {
+        "category": "API Security",
+        "question": "Are API endpoints hardened against command injection?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1059"
+    },
+    {
+        "category": "API Security",
+        "question": "Are APIs resistant to privilege escalation via flaws?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        },
+        "mitre_technique": "T1068"
+    },
+    {
+        "category": "API Security",
+        "question": "Are API sessions safe from hijacking?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1550"
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirects safe from valid account exploitation?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 10,
+            "likelihood_probability": 9,
+            "asset_impact": 0.9
+        },
+        "mitre_technique": "T1078"
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirect scripts free of injected malicious code?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1059.001"
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirect URIs protected from phishing lures?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        },
+        "mitre_technique": "T1566"
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirect targets safe from OS command abuse?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1059.003"
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirect logs monitored for lateral movement?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        },
+        "mitre_technique": "T1021"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are IoT devices safe from initial access via exploits?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1190"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are blockchain nodes hardened against credential access?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        },
+        "mitre_technique": "T1110"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are AI models protected from data exfiltration?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1041"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are IoT protocols safe from network sniffing?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        },
+        "mitre_technique": "T1040"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are blockchain contracts free of execution flaws?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1203"
+    },
+    {
+        "category": "General",
+        "question": "Are systems protected from spearphishing links?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        },
+        "mitre_technique": "T1566.001"
+    },
+    {
+        "category": "General",
+        "question": "Are accounts safe from valid credential abuse?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 10,
+            "likelihood_probability": 9,
+            "asset_impact": 0.9
+        },
+        "mitre_technique": "T1078"
+    },
+    {
+        "category": "General",
+        "question": "Are endpoints hardened against process injection?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1055"
+    },
+    {
+        "category": "General",
+        "question": "Are networks safe from reconnaissance scans?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.6
+        },
+        "mitre_technique": "T1595"
+    },
+    {
+        "category": "General",
+        "question": "Are systems resistant to ransomware execution?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        },
+        "mitre_technique": "T1486"
+    },
+    {
+        "category": "API Security",
+        "question": "Are API keys safe from environmental exposure?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1552.001"
+    },
+    {
+        "category": "API Security",
+        "question": "Are APIs protected from DDoS via amplification?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        },
+        "mitre_technique": "T1498"
+    },
+    {
+        "category": "API Security",
+        "question": "Are API endpoints safe from lateral phishing?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        },
+        "mitre_technique": "T1566.002"
+    },
+    {
+        "category": "API Security",
+        "question": "Are API logs free of tampering attempts?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1070"
+    },
+    {
+        "category": "API Security",
+        "question": "Are APIs resistant to token replay attacks?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1550.001"
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirects safe from DNS hijacking?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1071.004"
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirect configs free of exploitation?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        },
+        "mitre_technique": "T1068"
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirect paths safe from data leakage?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        },
+        "mitre_technique": "T1537"
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirect servers patched against exploits?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1210"
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirects monitored for persistence?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        },
+        "mitre_technique": "T1547"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are IoT devices safe from physical tampering?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1556"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are blockchain nodes safe from process hollowing?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1055.012"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are AI endpoints protected from proxy abuse?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        },
+        "mitre_technique": "T1090"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are IoT sensors safe from spoofing attacks?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1562.001"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are blockchain logs safe from deletion?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1070.004"
+    },
+    {
+        "category": "General",
+        "question": "Are systems safe from supply chain exploits?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1195"
+    },
+    {
+        "category": "General",
+        "question": "Are endpoints protected from drive-by downloads?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        },
+        "mitre_technique": "T1189"
+    },
+    {
+        "category": "General",
+        "question": "Are networks safe from credential harvesting?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        },
+        "mitre_technique": "T1555.003"
+    },
+    {
+        "category": "General",
+        "question": "Are systems resistant to fileless malware?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1027"
+    },
+    {
+        "category": "General",
+        "question": "Are backups safe from ransomware wipers?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        },
+        "mitre_technique": "T1491"
+    },
+    {
+        "category": "API Security",
+        "question": "Are APIs safe from session fixation exploits?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1185"
+    },
+    {
+        "category": "API Security",
+        "question": "Are API calls protected from MITM attacks?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1557"
+    },
+    {
+        "category": "API Security",
+        "question": "Are APIs hardened against memory exploits?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1055.002"
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirects safe from trusted app abuse?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1550.002"
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirect servers free of rootkit persistence?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1014"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are IoT devices safe from firmware exploits?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1542"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are blockchain nodes safe from routing attacks?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        },
+        "mitre_technique": "T1498.002"
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are AI systems protected from model theft?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        },
+        "mitre_technique": "T1531"
+    },
+    {
+        "category": "General",
+        "question": "Are systems safe from social engineering lures?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        },
+        "mitre_technique": "T1656"
+    },
+    {
+        "category": "General",
+        "question": "Are networks monitored for C2 beaconing?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        },
+        "mitre_technique": "T1071"
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Are asset inventories aligned with NIS2 requirements?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "RBI",
+        "question": "Are financial entities compliant with NIS2 reporting?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "ISO",
+        "question": "Are risk management measures NIS2-compliant?",
+        "type": "compliance",
+        "weight": 10
+    },
+    {
+        "category": "Finance",
+        "question": "Are payment systems audited per ENISA guidelines?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "General",
+        "question": "Is a cybersecurity strategy updated annually?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Are incident response plans tested per NIS2?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "RBI",
+        "question": "Are third-party risks assessed per ENISA norms?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "ISO",
+        "question": "Are security policies reviewed per ENISA advice?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "Finance",
+        "question": "Are DORA requirements met for financial ICT?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "General",
+        "question": "Are critical sectors prioritized per NIS360?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Are backups secured per ENISA resilience guide?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "RBI",
+        "question": "Are fraud detection systems ENISA-compliant?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "ISO",
+        "question": "Are access controls audited per ENISA standards?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "Finance",
+        "question": "Are cybersecurity investments tracked per NIS?",
+        "type": "compliance",
+        "weight": 7
+    },
+    {
+        "category": "General",
+        "question": "Are NCSS objectives measurable per ENISA?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "NIST CSF",
+        "question": "Are supply chain risks mitigated per ENISA?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "RBI",
+        "question": "Are cloud services compliant with ENISA norms?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "ISO",
+        "question": "Are incident reports standardized per ENISA?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "Finance",
+        "question": "Are trust services secured per ENISA guidance?",
+        "type": "compliance",
+        "weight": 9
+    },
+    {
+        "category": "General",
+        "question": "Are sectoral maturity gaps addressed per NIS360?",
+        "type": "compliance",
+        "weight": 8
+    },
+    {
+        "category": "API Security",
+        "question": "Are APIs safe from ransomware attacks?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        }
+    },
+    {
+        "category": "API Security",
+        "question": "Are APIs protected from DDoS amplification?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        }
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirects safe from phishing exploits?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        }
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirects hardened against data breaches?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are IoT devices safe from availability threats?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        }
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are blockchain nodes safe from malware?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "General",
+        "question": "Are systems resistant to supply chain attacks?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "API Security",
+        "question": "Are APIs protected from insider threats?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        }
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirects safe from AI-driven attacks?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        }
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are AI models safe from data manipulation?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "General",
+        "question": "Are networks safe from zero-day exploits?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "API Security",
+        "question": "Are APIs resistant to brute force attacks?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        }
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirects safe from session hijacking?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are IoT devices protected from botnets?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "General",
+        "question": "Are systems safe from social engineering?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        }
+    },
+    {
+        "category": "API Security",
+        "question": "Are APIs hardened against injection attacks?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirects safe from credential theft?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are blockchain systems safe from DDoS?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 7,
+            "likelihood_probability": 6,
+            "asset_impact": 0.7
+        }
+    },
+    {
+        "category": "General",
+        "question": "Are endpoints safe from ransomware variants?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 9,
+            "likelihood_probability": 8,
+            "asset_impact": 0.9
+        }
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are AI endpoints safe from inference attacks?",
+        "type": "external_surface",
+        "weights": {
+            "vulnerability_weight": 8,
+            "likelihood_probability": 7,
+            "asset_impact": 0.8
+        }
+    },
+    {
+        "category": "General",
+        "question": "Are staff trained per ENISA awareness guidelines?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "Finance",
+        "question": "Are financial incident playbooks developed?",
+        "type": "other",
+        "weight": 8
+    },
+    {
+        "category": "API Security",
+        "question": "Are API risks communicated to stakeholders?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirect audits conducted per ENISA norms?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are IoT resilience plans tested per ENISA?",
+        "type": "other",
+        "weight": 8
+    },
+    {
+        "category": "General",
+        "question": "Are tabletop exercises run per ENISA advice?",
+        "type": "other",
+        "weight": 8
+    },
+    {
+        "category": "Finance",
+        "question": "Are supply chain risks monitored per ENISA?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "API Security",
+        "question": "Are API metrics tracked per ENISA standards?",
+        "type": "other",
+        "weight": 6
+    },
+    {
+        "category": "Web Redirections",
+        "question": "Are redirect policies updated per ENISA?",
+        "type": "other",
+        "weight": 7
+    },
+    {
+        "category": "Deep Tech",
+        "question": "Are blockchain audits aligned with ENISA?",
+        "type": "other",
+        "weight": 7
+    }
+]
