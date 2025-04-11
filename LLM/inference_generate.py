@@ -8,7 +8,7 @@ class InferenceModel_Generate:
         self.MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
         self.MODEL_DIR = "./Model/Model_generate"
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        print(f"Using device: {self.device}")
+        print(f"Generate Using device: {self.device}")
         
         self.tokenizer = AutoTokenizer.from_pretrained(self.MODEL_NAME, cache_dir=self.MODEL_DIR)
         self.model = AutoModelForCausalLM.from_pretrained(
@@ -18,7 +18,7 @@ class InferenceModel_Generate:
             cache_dir=self.MODEL_DIR
         )
         
-        print("Model is on", self.model.device)
+        print("Generate Model is on", self.model.device)
     
     def inference(self, messages: list) -> str:
         formatted_prompt = self.tokenizer.apply_chat_template(

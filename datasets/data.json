@@ -1,0 +1,62 @@
+[
+    {
+        "vendor_metadata_sector": "Cloud Services",
+        "vendor_metadata_domain": "Technology",
+        "vendor_metadata_location": "Bhopal, Madhya Pradesh, India",
+        "vendor_metadata_employee_strength": 403
+    },
+    {
+        "vendor_metadata_sector": "Security Services",
+        "vendor_metadata_domain": "Security",
+        "vendor_metadata_location": "San Francisco, California, USA",
+        "vendor_metadata_employee_strength": 1500
+    },
+    {
+        "vendor_metadata_sector": "Financial Services",
+        "vendor_metadata_domain": "Finance",
+        "vendor_metadata_location": "Chicago, Illinois, USA",
+        "vendor_metadata_employee_strength": 850
+    },
+    {
+        "vendor_metadata_sector": "Security Services",
+        "vendor_metadata_domain": "Security",
+        "vendor_metadata_location": "Ahmedabad, Gujarat, India",
+        "vendor_metadata_employee_strength": 272
+    },
+    {
+        "vendor_metadata_sector": "Security Services",
+        "vendor_metadata_domain": "Security",
+        "vendor_metadata_location": " Coimbatore Tamil Nadu, India",
+        "vendor_metadata_employee_strength": 330
+    },
+    {
+        "vendor_metadata_sector": "Financial Services",
+        "vendor_metadata_domain": "Finance",
+        "vendor_metadata_location": "Indore, Madhya Pradesh, India",
+        "vendor_metadata_employee_strength": 981
+    },
+    {
+        "vendor_metadata_sector": "Data Center Services",
+        "vendor_metadata_domain": "Technology",
+        "vendor_metadata_location": "Seattle, Washington, USA",
+        "vendor_metadata_employee_strength": 2500
+    },
+    {
+        "vendor_metadata_sector": "IT Services",
+        "vendor_metadata_domain": "Technology",
+        "vendor_metadata_location": "Vadodara, Gujarat, India",
+        "vendor_metadata_employee_strength": 737
+    },
+    {
+        "vendor_metadata_sector": "Financial Services",
+        "vendor_metadata_domain": "Finance",
+        "vendor_metadata_location": "New York, USA",
+        "vendor_metadata_employee_strength": 848
+    },
+    {
+        "vendor_metadata_sector": "Security Services",
+        "vendor_metadata_domain": "Security",
+        "vendor_metadata_location": "Boston, Massachusetts, USA",
+        "vendor_metadata_employee_strength": 900
+    }
+]
