@@ -119,6 +119,8 @@ class Pipeline:
           ]
       }
       
+      print(json.dumps(payload,indent=2))
+      
       response = self.model1.inference(payload["messages"])
       json_response = self.extract_json_from_response(response)
       return json_response
@@ -246,7 +248,7 @@ class Pipeline:
                     }
                 ]
             }
-
+            print(json.dumps(payload,indent=2))
             response = self.model1.inference(payload["messages"])
             final_question_with_their_weights.append(self.extract_last_json_object(response))
 
@@ -301,14 +303,15 @@ if __name__ == "__main__":
 
     with open("./datasets/data.json" , "r") as f:
         vendor_metadata_list = json.load(f)
-    top_n = [10]
+    top_n = [10,15,20,25,30,25,40,45,50]
     avg_percentage_for_each_n = []
     for n in top_n:
         SYSTEM_MESSAGE_ZERO_SHOT = SYSTEM_MESSAGE_ZERO_TEMPLATE.replace("replace_value", str(n), 1)
         running_mean = 0.0
         cnt = 0
+        print("-------------------------------------------------------------------------------------------------------------------------------------------")
         for vendor_metadata in vendor_metadata_list:
-            print(json.dumps(vendor_metadata,indent=4))
+            # print(json.dumps(vendor_metadata,indent=4))
             all_questions = obj.get_questions(vendor_metadata)
             if all_questions == None:
                 continue
