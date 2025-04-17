@@ -11,9 +11,9 @@ B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
 SPECIAL_TAGS = [B_INST, E_INST, "<<SYS>>", "<</SYS>>"]
 UNSAFE_ERROR = "Error: special tags are not allowed as part of the prompt."
 
-SYSTEM_MESSAGE_ZERO_SHOT = ""
-SYSTEM_MESSAGE_ZERO_TEMPLATE = f"""{B_SYS}
-You are tasked with generating a maximum of replace_value highly relevant questions to assess the cybersecurity risk of a vendor being considered for onboarding by our firm. These questions must effectively evaluate the vendor's cyber risk profile to minimize potential risks to our organization. 
+# SYSTEM_MESSAGE_ZERO_SHOT = ""
+SYSTEM_MESSAGE_ZERO_SHOT= f"""{B_SYS}
+You are tasked with generating a maximum of 20 highly relevant questions to assess the cybersecurity risk of a vendor being considered for onboarding by our firm. These questions must effectively evaluate the vendor's cyber risk profile to minimize potential risks to our organization. 
 
 Questions should span categories such as RBI Cybersecurity Framework, Cloud Security, NIST, Finance, ISO Standards, API Security, Web Redirections, Deep Tech, and general cybersecurity practices. 
 
@@ -63,11 +63,10 @@ Given a new question and its type (matching the dataset), analyze its content an
   "category": "<inferred from context>",
   "question": "<new question>",
   "type": "external_surface",
-  "weights": {{
-    "vulnerability_weight": <predicted value (0-10)>,
-    "likelihood_probability": <predicted value (0-1)>,
-    "asset_impact": <predicted value (0-1)>
-  }}
+  "weights_vulnerability_weight": <predicted value (0-10)>,
+  "weights_likelihood_probability": <predicted value (0-1)>,
+  "weights_asset_impact": <predicted value (0-1)>
+  
   }}
   
 {E_SYS}"""
@@ -119,7 +118,7 @@ class Pipeline:
           ]
       }
       
-      print(json.dumps(payload,indent=2))
+    #   print(json.dumps(payload,indent=2))
       
       response = self.model1.inference(payload["messages"])
       json_response = self.extract_json_from_response(response)
@@ -211,11 +210,9 @@ class Pipeline:
                         "category": q.get("category"),
                         "question": q.get("question"),
                         "type": q.get("type", Q_Tag),
-                        "weights": q.get("weights", {
-                            "vulnerability_weight": 0,
-                            "likelihood_probability": 0,
-                            "asset_impact": 0
-                        })
+                        "weights_vulnerability_weight" : q["weights_vulnerability_weight"],
+                        "weights_likelihood_probability" : q["weights_likelihood_probability"],
+                        "weights_asset_impact" : q["weights_asset_impact"]
                     }
                 formatted_similar_Q.append(formatted_q)
 
@@ -248,9 +245,11 @@ class Pipeline:
                     }
                 ]
             }
-            print(json.dumps(payload,indent=2))
+            # print(json.dumps(payload,indent=2))
             response = self.model1.inference(payload["messages"])
-            final_question_with_their_weights.append(self.extract_last_json_object(response))
+            item = self.extract_last_json_object(response)
+            item["similar"] = formatted_similar_Q
+            final_question_with_their_weights.append(item)
 
         return final_question_with_their_weights
 
@@ -261,7 +260,7 @@ class Pipeline:
         
 
 def check_keys(item):
-    keys_to_check = ["vulnerability_weight", "likelihood_probability", "asset_impact"]
+    keys_to_check = ["weights_vulnerability_weight", "weights_likelihood_probability", "weights_asset_impact"]
     external_check = 0
     compliance_others_check = 0
 
@@ -270,9 +269,9 @@ def check_keys(item):
 
     if external_check == 1:
         try:
-            v_wt = float(item.get("vulnerability_weight"))
-            li_pr = float(item.get("likelihood_probability"))
-            as_im = float(item.get("asset_impact"))
+            v_wt = float(item.get("weights_vulnerability_weight"))
+            li_pr = float(item.get("weights_likelihood_probability"))
+            as_im = float(item.get("weights_asset_impact"))
         except (TypeError, ValueError):
             # Any of the values are None or not convertible to float
             v_wt = li_pr = as_im = None
@@ -303,48 +302,20 @@ if __name__ == "__main__":
 
     with open("./datasets/data.json" , "r") as f:
         vendor_metadata_list = json.load(f)
-    top_n = [10,15,20,25,30,25,40,45,50]
-    avg_percentage_for_each_n = []
-    for n in top_n:
-        SYSTEM_MESSAGE_ZERO_SHOT = SYSTEM_MESSAGE_ZERO_TEMPLATE.replace("replace_value", str(n), 1)
-        running_mean = 0.0
-        cnt = 0
-        print("-------------------------------------------------------------------------------------------------------------------------------------------")
-        for vendor_metadata in vendor_metadata_list:
-            # print(json.dumps(vendor_metadata,indent=4))
-            all_questions = obj.get_questions(vendor_metadata)
-            if all_questions == None:
-                continue
-            final_question_with_their_weights = obj.weights_prediction(all_questions)
-            print(json.dumps(final_question_with_their_weights,indent=2))
-            temp_cnt = 0
-            for item in final_question_with_their_weights:
-                if check_keys(item) == 1:
-                    temp_cnt += 1
-            running_mean = (running_mean * cnt + 100.0*float(temp_cnt) / float(n)) / float(cnt + 1)
-            cnt += 1
-        avg_percentage_for_each_n.append(running_mean)
+    
+    output_list = []
+    for vendor_metadata in vendor_metadata_list:
         
-    plt.figure(figsize=(10, 6))
-    plt.plot(top_n, avg_percentage_for_each_n, 'o-', color='blue', label='Average Percentage')
-    for x, y in zip(top_n, avg_percentage_for_each_n):
-        plt.text(x, y + 1.5, f"{y:.1f}%", ha='center', fontsize=9)
-
-    # Custom y-axis ticks (0 to 80 in steps of 5)
-    plt.ylim(0, 100)
-    plt.yticks(range(0, 85, 5))  # adjust 85 if needed based on your data
-
-    # Labels and formatting
-    plt.xlabel('N')
-    plt.ylabel('Average Percentage')
-    plt.title('Average percentage of the top-n relevant questions generated by Language Model 1 for which it is able to predict weights in a few-shot learning setting.')
-    plt.grid(True)
-    plt.legend()
-
-    # Save the plot
-    plt.savefig("average_percentage_plot.png", dpi=300, bbox_inches='tight')
-
-    # Show the plot
-    plt.show()
-      
-
+        all_questions = obj.get_questions(vendor_metadata)
+        if all_questions == None:
+            continue
+        final_question_with_their_weights = obj.weights_prediction(all_questions)
+        item = vendor_metadata
+        item["questions"] = final_question_with_their_weights
+        # print(json.dumps(item,indent=4))
+        output_list.append(item)
+        # break
+    with open("./predicted_weights.json", "w") as f:
+        json.dump(output_list, f, indent=4)
+        
+    

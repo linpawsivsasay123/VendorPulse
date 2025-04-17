@@ -11,7 +11,7 @@ class InferenceModel_Similarity:
         print(f"Similarity Using device: {self.device}")
         
         self.model = SentenceTransformer(self.MODEL_NAME, cache_folder=self.MODEL_DIR)
-        self.dataset_path = "./datasets/questions_with_weights.json"
+        self.dataset_path = "./datasets/transformed_questions.json"
         print("Similarity Model is on", self.device)
     
     def most_similar(self, Question, question_tag, top_n=5):
