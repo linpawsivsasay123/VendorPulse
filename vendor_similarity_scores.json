@@ -1,0 +1,526 @@
+{
+    "vendors": [
+        {
+            "vendor_metadata": {
+                "sector": "Financial Services",
+                "domain": "Finance",
+                "location": "Mumbai, Maharashtra, India",
+                "employee_strength": 1050
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.37294315584003923,
+                "semantic_similarity_std": 0.12205641927830348,
+                "jaccard_similarity": 0.031811980374286876,
+                "rouge1_f1": 0.05981805812698834,
+                "rouge2_f1": 0.0046315789473684215,
+                "rougeL_f1": 0.05391858722751743,
+                "bleu_score": 0.01916550279686876,
+                "total_comparisons": 40
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "IT Services",
+                "domain": "Cloud Services",
+                "location": "San Francisco, California, USA",
+                "employee_strength": 420
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.40757047206163405,
+                "semantic_similarity_std": 0.12408780196353857,
+                "jaccard_similarity": 0.06677670368846839,
+                "rouge1_f1": 0.12109228871318352,
+                "rouge2_f1": 0.022405358324539916,
+                "rougeL_f1": 0.11145455802282124,
+                "bleu_score": 0.03729424589785539,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Security Services",
+                "domain": "Cybersecurity",
+                "location": "Bengaluru, Karnataka, India",
+                "employee_strength": 390
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.38239288661215043,
+                "semantic_similarity_std": 0.11205491141083275,
+                "jaccard_similarity": 0.05538689705356372,
+                "rouge1_f1": 0.11152360574280008,
+                "rouge2_f1": 0.023868312757201644,
+                "rougeL_f1": 0.1100421242613186,
+                "bleu_score": 0.05081368588528432,
+                "total_comparisons": 45
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Legal Services",
+                "domain": "Legal",
+                "location": "New York, New York, USA",
+                "employee_strength": 250
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.4276768505573273,
+                "semantic_similarity_std": 0.08080112481861396,
+                "jaccard_similarity": 0.04707463322711,
+                "rouge1_f1": 0.1052136813368772,
+                "rouge2_f1": 0.01866071511334669,
+                "rougeL_f1": 0.08790250797864502,
+                "bleu_score": 0.027973755147406257,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Retail",
+                "domain": "Retail",
+                "location": "Delhi, NCR, India",
+                "employee_strength": 1200
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.35458053487042585,
+                "semantic_similarity_std": 0.14795298689238712,
+                "jaccard_similarity": 0.039956956623623294,
+                "rouge1_f1": 0.07179652469672063,
+                "rouge2_f1": 0.0067901234567901226,
+                "rougeL_f1": 0.06883356173375765,
+                "bleu_score": 0.028029733865958712,
+                "total_comparisons": 45
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "IT Services",
+                "domain": "Cybersecurity",
+                "location": "Austin, Texas, USA",
+                "employee_strength": 340
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.3452883826568723,
+                "semantic_similarity_std": 0.13538781519119988,
+                "jaccard_similarity": 0.023453823953823952,
+                "rouge1_f1": 0.0568268517899693,
+                "rouge2_f1": 0.002,
+                "rougeL_f1": 0.052303042266159776,
+                "bleu_score": 0.02137725024945677,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Service-Based",
+                "domain": "Consulting",
+                "location": "Chicago, Illinois, USA",
+                "employee_strength": 280
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.3699860268168979,
+                "semantic_similarity_std": 0.09230723079222881,
+                "jaccard_similarity": 0.029745316411983077,
+                "rouge1_f1": 0.06427815981404769,
+                "rouge2_f1": 0.006913580246913581,
+                "rougeL_f1": 0.06075849107698765,
+                "bleu_score": 0.03003893649885078,
+                "total_comparisons": 45
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Legal Services",
+                "domain": "Legal",
+                "location": "Chennai, Tamil Nadu, India",
+                "employee_strength": 190
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.35243296490775217,
+                "semantic_similarity_std": 0.07084045788798905,
+                "jaccard_similarity": 0.02536539350264841,
+                "rouge1_f1": 0.06376701283946579,
+                "rouge2_f1": 0.0044893378226711555,
+                "rougeL_f1": 0.06174681081926377,
+                "bleu_score": 0.026425744397086347,
+                "total_comparisons": 45
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Retail",
+                "domain": "Retail",
+                "location": "Boston, Massachusetts, USA",
+                "employee_strength": 900
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.31131883040070535,
+                "semantic_similarity_std": 0.12512634493198466,
+                "jaccard_similarity": 0.033031968031968034,
+                "rouge1_f1": 0.06096247176742533,
+                "rouge2_f1": 0.008741830065359477,
+                "rougeL_f1": 0.06096247176742533,
+                "bleu_score": 0.030837623150410654,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "IT Services",
+                "domain": "Cloud Services",
+                "location": "Pune, Maharashtra, India",
+                "employee_strength": 530
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.32383105472661555,
+                "semantic_similarity_std": 0.14869032181183117,
+                "jaccard_similarity": 0.03532267732267732,
+                "rouge1_f1": 0.06922941539553235,
+                "rouge2_f1": 0.00879120879120879,
+                "rougeL_f1": 0.062106515307115015,
+                "bleu_score": 0.021882091277368253,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Security Services",
+                "domain": "Cybersecurity",
+                "location": "Seattle, Washington, USA",
+                "employee_strength": 360
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.34419869460165503,
+                "semantic_similarity_std": 0.11461287692880899,
+                "jaccard_similarity": 0.02552331002331002,
+                "rouge1_f1": 0.04680338559652061,
+                "rouge2_f1": 0.005662575410859163,
+                "rougeL_f1": 0.041140810185661444,
+                "bleu_score": 0.023560399981726342,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Financial Services",
+                "domain": "Finance",
+                "location": "Kolkata, West Bengal, India",
+                "employee_strength": 650
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.327072184830904,
+                "semantic_similarity_std": 0.11661950585833002,
+                "jaccard_similarity": 0.02464194139194139,
+                "rouge1_f1": 0.0476427148228957,
+                "rouge2_f1": 0.001379310344827586,
+                "rougeL_f1": 0.04493007114473478,
+                "bleu_score": 0.016337636085298878,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Service-Based",
+                "domain": "Managed Services",
+                "location": "Miami, Florida, USA",
+                "employee_strength": 220
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.36472326293587687,
+                "semantic_similarity_std": 0.06295324200575908,
+                "jaccard_similarity": 0.02531836219336219,
+                "rouge1_f1": 0.06770067178500347,
+                "rouge2_f1": 0.0,
+                "rougeL_f1": 0.06570067178500347,
+                "bleu_score": 0.024210808572139357,
+                "total_comparisons": 40
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Retail",
+                "domain": "Retail",
+                "location": "Ahmedabad, Gujarat, India",
+                "employee_strength": 1000
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.3477194610238075,
+                "semantic_similarity_std": 0.07681328939457337,
+                "jaccard_similarity": 0.025349278172807584,
+                "rouge1_f1": 0.0418357106918875,
+                "rouge2_f1": 0.0,
+                "rougeL_f1": 0.03925506553059717,
+                "bleu_score": 0.01618955913817944,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "IT Services",
+                "domain": "Cybersecurity",
+                "location": "Denver, Colorado, USA",
+                "employee_strength": 410
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.380926343165338,
+                "semantic_similarity_std": 0.15429651881680154,
+                "jaccard_similarity": 0.03147161172161172,
+                "rouge1_f1": 0.05081975496878046,
+                "rouge2_f1": 0.00801025641025641,
+                "rougeL_f1": 0.05081975496878046,
+                "bleu_score": 0.02193907820752039,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Legal Services",
+                "domain": "Legal",
+                "location": "Noida, Uttar Pradesh, India",
+                "employee_strength": 230
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.39609537497162817,
+                "semantic_similarity_std": 0.09903564864440906,
+                "jaccard_similarity": 0.0377092698967699,
+                "rouge1_f1": 0.07585550842072582,
+                "rouge2_f1": 0.01349425936382458,
+                "rougeL_f1": 0.07358278114799854,
+                "bleu_score": 0.025280885364769468,
+                "total_comparisons": 40
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Financial Services",
+                "domain": "Finance",
+                "location": "Phoenix, Arizona, USA",
+                "employee_strength": 820
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.38673568665981295,
+                "semantic_similarity_std": 0.1091253152758172,
+                "jaccard_similarity": 0.04156446331446331,
+                "rouge1_f1": 0.08230975467552767,
+                "rouge2_f1": 0.008243589743589744,
+                "rougeL_f1": 0.08040499277076575,
+                "bleu_score": 0.027937862753709755,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Security Services",
+                "domain": "Cybersecurity",
+                "location": "Jaipur, Rajasthan, India",
+                "employee_strength": 370
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.33909208960831166,
+                "semantic_similarity_std": 0.12929843880102962,
+                "jaccard_similarity": 0.017346172346172344,
+                "rouge1_f1": 0.05084670932522955,
+                "rouge2_f1": 0.002116402116402116,
+                "rougeL_f1": 0.04724882572734595,
+                "bleu_score": 0.015310312839700418,
+                "total_comparisons": 45
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Service-Based",
+                "domain": "Consulting",
+                "location": "Los Angeles, California, USA",
+                "employee_strength": 260
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.3645803028345108,
+                "semantic_similarity_std": 0.05985549823645528,
+                "jaccard_similarity": 0.023718059718059716,
+                "rouge1_f1": 0.05806461032772784,
+                "rouge2_f1": 0.0016,
+                "rougeL_f1": 0.05220602446914198,
+                "bleu_score": 0.022346665403249075,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "IT Services",
+                "domain": "Cloud Services",
+                "location": "Indore, Madhya Pradesh, India",
+                "employee_strength": 490
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.39938805449754,
+                "semantic_similarity_std": 0.1455436888612199,
+                "jaccard_similarity": 0.04064274081611543,
+                "rouge1_f1": 0.0620309945503043,
+                "rouge2_f1": 0.002989130434782609,
+                "rougeL_f1": 0.05735853078218836,
+                "bleu_score": 0.016872103354463385,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Retail",
+                "domain": "Retail",
+                "location": "Atlanta, Georgia, USA",
+                "employee_strength": 870
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.3231046396866441,
+                "semantic_similarity_std": 0.15065065225318203,
+                "jaccard_similarity": 0.02638189588189588,
+                "rouge1_f1": 0.05778731015324096,
+                "rouge2_f1": 0.002,
+                "rougeL_f1": 0.05778731015324096,
+                "bleu_score": 0.021643440174560366,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Financial Services",
+                "domain": "Finance",
+                "location": "Coimbatore, Tamil Nadu, India",
+                "employee_strength": 680
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.389908500512441,
+                "semantic_similarity_std": 0.07521433659529402,
+                "jaccard_similarity": 0.048110879679507126,
+                "rouge1_f1": 0.08846913987043922,
+                "rouge2_f1": 0.007656272873664178,
+                "rougeL_f1": 0.0598120603244708,
+                "bleu_score": 0.026137691763050076,
+                "total_comparisons": 45
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Security Services",
+                "domain": "Cybersecurity",
+                "location": "Houston, Texas, USA",
+                "employee_strength": 330
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.35125965386629104,
+                "semantic_similarity_std": 0.09617038502414721,
+                "jaccard_similarity": 0.023484848484848487,
+                "rouge1_f1": 0.06728193031598603,
+                "rouge2_f1": 0.0048529411764705885,
+                "rougeL_f1": 0.06005970809376381,
+                "bleu_score": 0.034120846859085854,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Legal Services",
+                "domain": "Legal",
+                "location": "Nagpur, Maharashtra, India",
+                "employee_strength": 200
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.3971868240833282,
+                "semantic_similarity_std": 0.10759883356276699,
+                "jaccard_similarity": 0.03413220113220113,
+                "rouge1_f1": 0.09466269970289354,
+                "rouge2_f1": 0.007271929824561404,
+                "rougeL_f1": 0.08941897500653727,
+                "bleu_score": 0.02372292330827988,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "IT Services",
+                "domain": "Cybersecurity",
+                "location": "Portland, Oregon, USA",
+                "employee_strength": 380
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.3246772175654769,
+                "semantic_similarity_std": 0.1293035646996055,
+                "jaccard_similarity": 0.02025769079561649,
+                "rouge1_f1": 0.04294412189894786,
+                "rouge2_f1": 0.003472222222222222,
+                "rougeL_f1": 0.03800973618240654,
+                "bleu_score": 0.011938673087139327,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Service-Based",
+                "domain": "Managed Services",
+                "location": "Vadodara, Gujarat, India",
+                "employee_strength": 240
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.30967586033046246,
+                "semantic_similarity_std": 0.16333702539517664,
+                "jaccard_similarity": 0.0315990675990676,
+                "rouge1_f1": 0.05724012124987055,
+                "rouge2_f1": 0.0022222222222222222,
+                "rougeL_f1": 0.055240121249870565,
+                "bleu_score": 0.022501338933357456,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Retail",
+                "domain": "Retail",
+                "location": "Minneapolis, Minnesota, USA",
+                "employee_strength": 940
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.329561165086925,
+                "semantic_similarity_std": 0.16641926523383946,
+                "jaccard_similarity": 0.03585159285159285,
+                "rouge1_f1": 0.08977564277005655,
+                "rouge2_f1": 0.010773993808049536,
+                "rougeL_f1": 0.07514118898854394,
+                "bleu_score": 0.02883024759760455,
+                "total_comparisons": 50
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "Financial Services",
+                "domain": "Finance",
+                "location": "Patna, Bihar, India",
+                "employee_strength": 730
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.37640982185091293,
+                "semantic_similarity_std": 0.08551749289261704,
+                "jaccard_similarity": 0.03153783891178849,
+                "rouge1_f1": 0.07409913715697666,
+                "rouge2_f1": 0.010055419620637012,
+                "rougeL_f1": 0.07181342287126237,
+                "bleu_score": 0.022100740310611704,
+                "total_comparisons": 35
+            }
+        },
+        {
+            "vendor_metadata": {
+                "sector": "IT Services",
+                "domain": "Cloud Services",
+                "location": "Raleigh, North Carolina, USA",
+                "employee_strength": 460
+            },
+            "similarity_scores": {
+                "semantic_similarity_mean": 0.3486587727069855,
+                "semantic_similarity_std": 0.0790245745339131,
+                "jaccard_similarity": 0.03779412331734313,
+                "rouge1_f1": 0.0942172810365508,
+                "rouge2_f1": 0.007816017316017316,
+                "rougeL_f1": 0.07858210441608007,
+                "bleu_score": 0.02212288144285019,
+                "total_comparisons": 50
+            }
+        }
+    ]
+}

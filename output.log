@@ -1,7 +1,7 @@
 nohup: ignoring input
-Generate Using device: cuda
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.78s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.70s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.86s/it]
-Generate Model is on cuda:0
+[nltk_data] Downloading package punkt to /home/kunal/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /home/kunal/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
 Similarity Using device: cuda
 Similarity Model is on cuda
-Error decoding JSON: Expecting ',' delimiter: line 5 column 5 (char 467)
