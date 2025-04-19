@@ -14,17 +14,17 @@ def table_txt():
         scores = group["similarity_scores"]
         row = [
             sectors,
-            f"{scores['semantic_similarity_mean']:.4f} ± {scores['semantic_similarity_std']:.4f}",
-            f"{scores['jaccard_similarity']:.4f} ({scores['jaccard_variance']:.4f})",
-            f"{scores['rouge1_f1']:.4f} ({scores['rouge1_variance']:.4f})",
-            f"{scores['rouge2_f1']:.4f} ({scores['rouge2_variance']:.4f})",
-            f"{scores['rougeL_f1']:.4f} ({scores['rougeL_variance']:.4f})",
-            f"{scores['bleu_score']:.4f} ({scores['bleu_variance']:.4f})"
+            f"{scores['semantic_similarity_mean']:.3f} ± {scores['semantic_similarity_std']:.3f}",
+            f"{scores['jaccard_similarity']:.3f} ({scores['jaccard_variance']:.3f})",
+            f"{scores['rouge1_f1']:.3f} ({scores['rouge1_variance']:.3f})",
+            f"{scores['rouge2_f1']:.3f} ({scores['rouge2_variance']:.3f})",
+            f"{scores['rougeL_f1']:.3f} ({scores['rougeL_variance']:.3f})",
+            f"{scores['bleu_score']:.3f} ({scores['bleu_variance']:.3f})"
         ]
         table_data.append(row)
 
     # Generate table using tabulate
-    table = tabulate(table_data, headers=headers, tablefmt="grid", floatfmt=".4f")
+    table = tabulate(table_data, headers=headers, tablefmt="grid", floatfmt=".3f")
 
     # Print table to console
     print(table)
@@ -35,19 +35,19 @@ def table_txt():
 
 def table_image():
     table_data = []
-    headers = ["Sector Group", "Semantic Similarity", "Jaccard ", "ROUGE-1", "ROUGE-2", "ROUGE-L", "BLEU"]
+    headers = ["Vendor Type", "Semantic Similarity", "Jaccard ", "ROUGE-1", "ROUGE-2", "ROUGE-L", "BLEU"]
 
     for group in data["groups"]:
         sectors = ", ".join(group["sectors"])  # Convert sector list to string
         scores = group["similarity_scores"]
         row = [
             sectors,
-            f"{scores['semantic_similarity_mean']:.4f} ± {scores['semantic_similarity_std']:.4f}",
-            f"{scores['jaccard_similarity']:.4f} ({scores['jaccard_variance']:.4f})",
-            f"{scores['rouge1_f1']:.4f} ({scores['rouge1_variance']:.4f})",
-            f"{scores['rouge2_f1']:.4f} ({scores['rouge2_variance']:.4f})",
-            f"{scores['rougeL_f1']:.4f} ({scores['rougeL_variance']:.4f})",
-            f"{scores['bleu_score']:.4f} ({scores['bleu_variance']:.4f})"
+            f"{scores['semantic_similarity_mean']:.3f} ± {scores['semantic_similarity_std']:.3f}",
+            f"{scores['jaccard_similarity']:.3f} ± {scores['jaccard_variance']:.3f}",
+            f"{scores['rouge1_f1']:.3f} ± {scores['rouge1_variance']:.3f}",
+            f"{scores['rouge2_f1']:.3f} ± {scores['rouge2_variance']:.3f}",
+            f"{scores['rougeL_f1']:.3f} ± {scores['rougeL_variance']:.3f}",
+            f"{scores['bleu_score']:.3f} ± {scores['bleu_variance']:.3f}"
         ]
         table_data.append(row)
 
