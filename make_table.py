@@ -1,25 +1,25 @@
-
 import json
 from tabulate import tabulate
 from PIL import Image, ImageDraw, ImageFont
 
-with open("./vendor_similarity_scores.json" , "r") as f:
+with open("./vendor_similarity_scores.json", "r") as f:
     data = json.load(f)
 
 def table_txt():
     table_data = []
-    headers = ["Vendor", "SS", "Jaccard", "ROUGE-1", "ROUGE-2", "ROUGE-L", "BLEU"]
+    headers = ["Sector Group", "SS (Mean ± Std)", "Jaccard (Var)", "ROUGE-1 (Var)", "ROUGE-2 (Var)", "ROUGE-L (Var)", "BLEU (Var)"]
 
-    for idx, vendor in enumerate(data["vendors"], 1):
-        scores = vendor["similarity_scores"]
+    for group in data["groups"]:
+        sectors = ", ".join(group["sectors"])  # Convert sector list to string
+        scores = group["similarity_scores"]
         row = [
-            idx,  # Vendor number (1, 2, 3, ...)
+            sectors,
             f"{scores['semantic_similarity_mean']:.4f} ± {scores['semantic_similarity_std']:.4f}",
-            round(scores["jaccard_similarity"], 4),
-            round(scores["rouge1_f1"], 4),
-            round(scores["rouge2_f1"], 4),
-            round(scores["rougeL_f1"], 4),
-            round(scores["bleu_score"], 4)
+            f"{scores['jaccard_similarity']:.4f} ({scores['jaccard_variance']:.4f})",
+            f"{scores['rouge1_f1']:.4f} ({scores['rouge1_variance']:.4f})",
+            f"{scores['rouge2_f1']:.4f} ({scores['rouge2_variance']:.4f})",
+            f"{scores['rougeL_f1']:.4f} ({scores['rougeL_variance']:.4f})",
+            f"{scores['bleu_score']:.4f} ({scores['bleu_variance']:.4f})"
         ]
         table_data.append(row)
 
@@ -35,18 +35,19 @@ def table_txt():
 
 def table_image():
     table_data = []
-    headers = ["Vendor", "SS", "Jaccard", "ROUGE-1", "ROUGE-2", "ROUGE-L", "BLEU"]
+    headers = ["Sector Group", "Semantic Similarity", "Jaccard ", "ROUGE-1", "ROUGE-2", "ROUGE-L", "BLEU"]
 
-    for idx, vendor in enumerate(data["vendors"], 1):
-        scores = vendor["similarity_scores"]
+    for group in data["groups"]:
+        sectors = ", ".join(group["sectors"])  # Convert sector list to string
+        scores = group["similarity_scores"]
         row = [
-            str(idx),
+            sectors,
             f"{scores['semantic_similarity_mean']:.4f} ± {scores['semantic_similarity_std']:.4f}",
-            f"{scores['jaccard_similarity']:.4f}",
-            f"{scores['rouge1_f1']:.4f}",
-            f"{scores['rouge2_f1']:.4f}",
-            f"{scores['rougeL_f1']:.4f}",
-            f"{scores['bleu_score']:.4f}",
+            f"{scores['jaccard_similarity']:.4f} ({scores['jaccard_variance']:.4f})",
+            f"{scores['rouge1_f1']:.4f} ({scores['rouge1_variance']:.4f})",
+            f"{scores['rouge2_f1']:.4f} ({scores['rouge2_variance']:.4f})",
+            f"{scores['rougeL_f1']:.4f} ({scores['rougeL_variance']:.4f})",
+            f"{scores['bleu_score']:.4f} ({scores['bleu_variance']:.4f})"
         ]
         table_data.append(row)
 
@@ -101,4 +102,5 @@ def table_image():
     # Save image
     image.save("vendor_similarity_table.png")
 
+table_txt()
 table_image()
