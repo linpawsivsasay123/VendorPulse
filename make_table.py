@@ -35,7 +35,7 @@ def table_txt():
 
 def table_image():
     table_data = []
-    headers = ["Vendor Type", "Semantic Similarity", "Jaccard ", "ROUGE-1", "ROUGE-2", "ROUGE-L", "BLEU"]
+    headers = ["Vendor Sector", "Semantic Similarity", "Jaccard ", "ROUGE-1", "ROUGE-2", "ROUGE-L", "BLEU"]
 
     for group in data["groups"]:
         sectors = ", ".join(group["sectors"])  # Convert sector list to string
